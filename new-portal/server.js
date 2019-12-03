@@ -9,7 +9,6 @@ const webpackConfigration = require("./webpack-dev.config");
 const compiler = webpack(webpackConfigration);
 
 const app = jsonServer.create();
-
 // 配置开发环境及热启动
 app.use(
 	webpackDevMiddleware(compiler, {

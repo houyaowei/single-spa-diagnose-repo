@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="ccmsApp" ng-strict-di>
+<html>
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport"
@@ -13,8 +13,10 @@
 		<script type="text/javascript" src="/libs/systemjs/amd.js"></script>
 		<script type="text/javascript" src="/libs/systemjs/named-exports.js"></script>
 		<script type="text/javascript" src="/libs/systemjs/use-default.js"></script>
-		<menus class="commHeader" style="display: block"></menus>
-		<ui-view class="portalContent"></ui-view>
+		<div id="portal">
+			<menus class="commHeader" style="display: block"></menus>
+			<ui-view class="portalContent"></ui-view>
+		</div>
 		
 		<script type="systemjs-importmap">
 			{
