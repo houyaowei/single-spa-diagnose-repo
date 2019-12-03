@@ -1,0 +1,8 @@
+<div class="unbind">
+    <cc-loading class="unbind_loading" ng-if="loading"></cc-loading>
+    <ul ng-repeat="li in list">
+        <li>{{li.title}}</li>
+        <li>{{li.no}}</li>
+        <li ng-if="li.bind" ng-click="ubCtrl.unbind($index)">{{li.bind}}</li>
+    </ul>
+</div>

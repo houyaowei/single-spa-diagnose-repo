@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="ccmsApp" ng-strict-di>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+		/>
+		<title>new portal </title>
+	</head>
+
+	<body>
+		<script type="text/javascript" src="/libs/systemjs/system.js"></script>
+		<script type="text/javascript" src="/libs/systemjs/amd.js"></script>
+		<script type="text/javascript" src="/libs/systemjs/named-exports.js"></script>
+		<script type="text/javascript" src="/libs/systemjs/use-default.js"></script>
+		<menus class="commHeader" style="display: block"></menus>
+		<ui-view class="portalContent"></ui-view>
+		
+		<script type="systemjs-importmap">
+			{
+			  "imports": {
+			    "@portal": "http://localhost:8000/portal.js",
+					"@portal/sceneMarketing" : "http://127.0.0.1:8889/entry.js",
+					"@portal/cusInsight": "http://localhost:9003/entry.js"
+			  }
+			}
+		</script>
+		<script>
+			// load the application
+			System.import("@portal");
+		</script>
+	</body>
+</html>
