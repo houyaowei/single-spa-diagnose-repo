@@ -16,3 +16,4 @@ var webApp = angular.module("ccmsApp", [
 
 webApp.config(router);
 
+angular.bootstrap(document.getElementById('portal'), ['ccmsApp'], {strictDi: true})

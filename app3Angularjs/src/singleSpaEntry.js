@@ -9,8 +9,8 @@ const angularLifecycles = singleSpaAngular1({
   domElementGetter,
   mainAngularModule: "app",
   uiRouter: true,
-  preserveGlobal: false
-  // template: "angular-js"
+  preserveGlobal: false,
+  template: "angular-js"
 });
 
 export const bootstrap = [angularLifecycles.bootstrap];

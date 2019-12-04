@@ -14,6 +14,7 @@ module.exports = {
     library: "a1App"
   },
   devServer: {
+    disableHostCheck: true,
     headers: {
       "Access-Control-Allow-Origin": "*"
     }

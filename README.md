@@ -16,7 +16,7 @@ this repo is aimed to diagnose single-spa-angularjs problems
 
 
 
-###### load url `http://loclahost:8000`  in the browser.
+###### load url `http://localhost:8000`  in the browser.
 
 ###### click the "customer Insight"
 
