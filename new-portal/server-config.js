@@ -12,7 +12,7 @@ const config = {
 	apiPort: 443,
 
 	// 启用服务接口
-	serverPort: 8000,
+	serverPort: 8010,
 
 	// 是否使用mock数据;
 	useMock: true

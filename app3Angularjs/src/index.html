@@ -1,0 +1,10 @@
+<div  class="ccmsc-main-container"
+	 ng-controller="MainController as $ctrl">
+	<cus-counter></cus-counter>
+	<div class="center-container" ng-if="$ctrl.loaded">
+			<span>{{$ctrl.name}}</span>
+		<ui-view
+			ng-if="$ctrl.loaded"
+			class="view-container"></ui-view>
+	</div>
+</div>

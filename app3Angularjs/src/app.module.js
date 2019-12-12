@@ -4,9 +4,10 @@ import ngRedux from "ng-redux";
 // import storeIndex from "./reducers/index";
 import * as store from "./reducers/store2";
 import counter from "./components/counter";
+import MainController from "./MainController";
 
 angular
-  .module("app", ["ui.router", ngRedux])
+  .module("app", ["ui.router", ngRedux]).controller("MainController",MainController)
   .config($ngReduxProvider => {
     //如果store使用combineReducers,这里该使用createStoreWith
     // $ngReduxProvider.createStoreWith(storeIndex);
