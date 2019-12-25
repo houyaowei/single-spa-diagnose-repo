@@ -5,9 +5,10 @@ import ngRedux from "ng-redux";
 import * as store from "./reducers/store2";
 import counter from "./components/counter";
 import MainController from "./MainController";
+import ccmsComponents from 'ccms-components';
 
 angular
-  .module("app", ["ui.router", ngRedux]).controller("MainController",MainController)
+  .module("app", ["ui.router", ngRedux,ccmsComponents]).controller("MainController",MainController)
   .config($ngReduxProvider => {
     //如果store使用combineReducers,这里该使用createStoreWith
     // $ngReduxProvider.createStoreWith(storeIndex);

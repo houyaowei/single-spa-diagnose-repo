@@ -1,8 +1,21 @@
+<style>
+.ccmsc-main-container .center-container{
+	left: 0;
+	right: 0;
+}
+</style>
 <div  class="ccmsc-main-container"
 	 ng-controller="MainController as $ctrl">
 	<cus-counter></cus-counter>
 	<div class="center-container" ng-if="$ctrl.loaded">
 			<span>{{$ctrl.name}}</span>
+			
+			<cc-menu-bar
+				unfold="$ctrl.menusOptions.unfold"
+				on-unfold="$ctrl.menusOptions.onUnfold(unfold)"
+				menu-source="$ctrl.menusOptions.menusResource"
+			></cc-menu-bar>
+
 		<ui-view
 			ng-if="$ctrl.loaded"
 			class="view-container"></ui-view>

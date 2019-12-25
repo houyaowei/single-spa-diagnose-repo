@@ -35,6 +35,41 @@ module.exports = {
         test: /\.html$/,
         exclude: /node_modules|svelte/,
         loader: "html-loader"
+      },
+       {
+        test: /\.css/,
+        use: ["style-loader", "css-loader"]
+      },
+       {
+        test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10000,
+              mimetype: "application/octet-stream"
+            }
+          }
+        ]
+      },
+       {
+        test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader:"file-loader"
+          }
+        ]
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name]-[hash:8].[ext]',
+            }
+          }
+        ]
       }
     ]
   },
