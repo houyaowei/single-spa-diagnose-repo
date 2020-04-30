@@ -79,7 +79,7 @@
 		"echarts": "4.1.0",
 		"gridmanager-angular-1.x": "1.2.1",
 		"gridmanager-ccms-skin": "0.2.2",
-		"jquery": "^2.2.4",
+		"jquery": "^3.5.0",
 		"md5": "^2.2.1",
 		"oclazyload": "^1.0.9",
 		"single-spa": "^4.4.1",
