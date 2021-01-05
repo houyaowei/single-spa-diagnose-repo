@@ -72,7 +72,7 @@
 		"angular-resource": "1.5.8",
 		"angular-sanitize": "1.5.8",
 		"angular-ui-router": "0.2.18",
-		"axios": "^0.18.0",
+		"axios": "^0.21.1",
 		"ccms-components": "2.37.23",
 		"ccms-customer-view": "0.1.19",
 		"ccms-sdk": "^2.2.3",
